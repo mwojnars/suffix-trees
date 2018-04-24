@@ -18,10 +18,10 @@ class STree():
 
         In case of an invalid input throws ValueError.
         """
-        if isinstance(input, str):
+        if isinstance(input, basestring):
             return 'st'
         elif isinstance(input, list):
-            if all(isinstance(item, str) for item in input):
+            if all(isinstance(item, basestring) for item in input):
                 return 'gst'
 
         raise ValueError("String argument should be of type String or"
